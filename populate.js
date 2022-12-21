@@ -10,8 +10,10 @@ const start = async () => {
     console.log('Deleted...');
     await Product.create(jsonProducts);
     console.log('products created successful...');
+    process.exit(0);
   } catch (err) {
     console.log(err);
+    process.exit(0);
   }
 };
 start();
